@@ -15,6 +15,6 @@ function selectionSort() {
   
       if (mini != i) animation(bars[mini], barsHeight[mini], cm);
     }
-    //sorted region
+    
     animation(bars[n - 1], barsHeight[n - 1], sorted);
   }

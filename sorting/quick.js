@@ -6,7 +6,8 @@ function quickSort(start, end) {
         animation(bars[start], barsHeight[start], sorted);
         return;
     }
-    let pivot = barsHeight[start]; 
+
+    let p = barsHeight[start]; 
     let i = start;
     let j = end + 1; 
     while (i < j) {
@@ -14,12 +15,12 @@ function quickSort(start, end) {
             animation(bars[i], barsHeight[i], c1);
             animation(bars[i], barsHeight[i], cm);
             i++;
-        } while (barsHeight[i] <= pivot);
+        } while (barsHeight[i] <= p);
         do {
             j--;
             animation(bars[j], barsHeight[j], c2);
             animation(bars[j], barsHeight[j], cm);
-        } while (barsHeight[j] > pivot);
+        } while (barsHeight[j] > p);
         if (i < j) {
             [barsHeight[i], barsHeight[j]] = [barsHeight[j], barsHeight[i]];
         }

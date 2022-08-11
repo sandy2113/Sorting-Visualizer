@@ -5,12 +5,13 @@ function bubbleSort() {
             animation(bars[j + 1], barsHeight[j + 1], c2);
 
             if (barsHeight[j] > barsHeight[j + 1]) {
-                //swapping
+            
                 [barsHeight[j], barsHeight[j + 1]] = [barsHeight[j + 1], barsHeight[j]];
 
                
                 animation(bars[j], barsHeight[j], c2);
                 animation(bars[j + 1], barsHeight[j + 1], c1);
+
             }
             
             animation(bars[j], barsHeight[j], cm);
@@ -18,6 +19,6 @@ function bubbleSort() {
         }
         animation(bars[n - 1 - i], barsHeight[n - 1 - i], sorted);
     }
-    //sorted region
+    
     animation(bars[0], barsHeight[0], sorted);
 }
