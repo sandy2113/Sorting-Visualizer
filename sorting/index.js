@@ -106,9 +106,6 @@ sortBtn.addEventListener("click", () => {
         case "Merge Sort":
             mergeSort(0, n - 1);
             break;
-        case "Heap Sort":
-            heapSort();
-            break;
 
         default:
             bubbleSort();   
