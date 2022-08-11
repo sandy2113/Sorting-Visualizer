@@ -2,10 +2,12 @@ function mergeSort(start, end) {
     if (start >= end) {
         return;
     }
+
     let middle = Math.floor((start + end) / 2);
     mergeSort(start, middle);
     mergeSort(middle + 1, end);
     merge(start, end);
+    
 }
 
 function merge(start, end) {

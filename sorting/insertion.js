@@ -9,6 +9,7 @@ function insertionSort() {
         animation(bars[j + 1], barsHeight[j + 1], c2);
         animation(bars[j + 1], barsHeight[j + 1], sorted);
         animation(bars[j], barsHeight[j], sorted);
+        
       }
       barsHeight[j + 1] = num;
   
